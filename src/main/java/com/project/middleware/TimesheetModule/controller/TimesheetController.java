@@ -13,7 +13,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http//localhost:3000")
 @RequestMapping("/api/timesheets")
 public class TimesheetController {
 
@@ -61,7 +61,6 @@ public class TimesheetController {
         TimesheetDTO updatedTimesheetDTO = timesheetService.updateTimesheetById(id, timesheetDTO);
         return ResponseEntity.ok(updatedTimesheetDTO);
     }
-
 
 
 
